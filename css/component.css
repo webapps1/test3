@@ -1,0 +1,82 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+@-webkit-scrollbar-track{
+border:1px gray solid;
+border-radius:5px;
+-webkit-box-shadow:0 0 6px gray inset;
+} 
+
+
+.grid {
+	max-width: 69em;
+	list-style: none;
+	margin: 0px auto;
+	padding: 0;
+}
+
+.grid li {
+	display: block;
+	float: left;
+	padding: 2px;
+	width: 33%;
+	opacity: 0;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+	opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+/* Effect 2: Move Up */
+.grid.effect li.animate {
+	-webkit-transform: translateY(200px);
+	-moz-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp 0.65s ease forwards;
+	-moz-animation: moveUp 0.65s ease forwards;
+	animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+	to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes moveUp {
+	to { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	to { transform: translateY(0); opacity: 1; }
+}
+
+
+@media screen and (max-width: 900px) {
+	.grid li {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.grid li {
+		width: 50%;
+	}
+}
+
+

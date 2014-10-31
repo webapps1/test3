@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
+
+    <title>Products</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/component.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+	<div class="wrapper" >
+		<!-- Action Bar -->
+		<div class="actionBar fixedtop">
+			<!-- Navigation Drawer -->
+			<div class="navigationDrawer">
+			  <div id="drawerIcon" class="drawerIcon"> 
+			    <span class="glyphicon glyphicon-align-justify"></span><!-- <img src="../images/ic_drawer.png"> -->
+			  </div>
+			  <div class="menu" id="menu">
+			    <div class="panel-group" id="accordion">
+			      <div class="panel panel-default">
+			        <div class="panel-heading">
+			          <h4 class="panel-title">
+			            <a href="../index.html">
+			              Home <span class="glyphicon glyphicon-home pull-right"></span>
+			            </a>
+			          </h4>
+			        </div>
+			      </div>
+			      <div class="panel panel-default">
+			        <div class="panel-heading">
+			          <h4 class="panel-title">
+			            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+			              Services
+			            </a>
+			          </h4>
+			        </div>
+			        <div id="collapseOne" class="panel-collapse collapse">
+			          <div class="panel-body">
+			            <div class="list-group">
+			              <a  href="../services/services_general.html" class="list-group-item">
+			                General Services
+			              </a>
+			              <a href="../services/services_ambulance.html" class="list-group-item">
+			                Contact Us
+			              </a>
+			              <a href="../services/services_atm.html" class="list-group-item">
+			                Catering Services
+			              </a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="panel panel-default">
+			        <div class="panel-heading">
+			          <h4 class="panel-title">
+			            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+			              Offers
+			            </a>
+			          </h4>
+			        </div>
+			        <div id="collapseTwo" class="panel-collapse collapse">
+			          <div class="panel-body">
+			            <div class="list-group">
+			              <a href="../offers/offers_general.html" class="list-group-item">
+			                General Offers
+			              </a>
+			              <a href="../offers/offers_deals.html" class="list-group-item">
+			                Special Deals
+			              </a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="panel panel-default">
+			        <div class="panel-heading">
+			          <h4 class="panel-title">
+			            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+			              Products
+			            </a>
+			          </h4>
+			        </div>
+			        <div id="collapseThree" class="panel-collapse collapse in">
+			          <div class="panel-body">
+			            <div class="list-group">
+			              <a href="products.html" class="list-group-item">
+			                Indian
+			              </a>
+			              <a href="products.html" class="list-group-item">
+			                Chinese
+			              </a>
+			              <a href="products.html" class="list-group-item">
+			                Moghalai
+			              </a>
+			             
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- /Navigation Drawer -->
+		<!-- <div id="screenIcon" class="screenIcon">
+		  <img src="../images/mobile/logoicon.png">
+		</div> -->
+		                  
+		<div id="screenName" class="screenName">
+		  Indian Main Course
+		</div>
+
+		<div class="overflow pull-right">
+          <ul class="nav navbar-right">
+              <li><a href="products/cart.html" class="cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   <span class="glyphicon glyphicon-th"></span><!-- <img src="../images/ic_action_overflow.png">  -->
+                </a>
+                <ul class="dropdown-menu pull-right">
+                   <li><a href="profile/profile.html">Profile</a></li>
+                  <li class="divider"></li>
+                  <li><a href="profile/signout.html">Signout</a></li>
+                </ul>
+              </li>
+           </ul>  
+        </div>
+		<div class="clearfix"></div>
+		</div>
+		<!-- /Action Bar -->
+
+		<div class="productscontainer">
+
+			<ul class="grid effect" id="grid">
+				<li onClick="location.href='singleItem.html'"  class="product">
+				   <a class="image"><img src="../images/mobile/1.jpg"></a>
+				   <a class="name">Tomato Soup</a>
+				   <a class="price">Rs 100 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'" class="product">
+				  <a class="image"><img src="../images/mobile/2.jpg"></a>
+				   <a class="name">Hot N Sour Soup</a>
+				   <a class="price">Rs 100 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'" class="product">
+				  <a class="image"><img src="../images/mobile/3.jpg"></a>
+				   <a class="name">Chicken Corn Soup</a>
+				   <a class="price">Rs 140 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'" class="product">
+				  <a class="image"><img src="../images/mobile/4.jpg"></a>
+				   <a class="name">Veg Manchurian</a>
+				   <a class="price">Rs 160 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'" class="product">
+				  <a class="image"><img src="../images/mobile/5.jpg"></a>
+				   <a class="name">Paneer 65</a>
+				   <a class="price">Rs 160 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'" class="product">
+				  <a class="image"><img src="../images/mobile/6.jpg"></a>
+				   <a class="name">Mushroom Baby Corn</a>
+				   <a class="price">Rs 160 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/7.jpg"></a>
+				   <a class="name">Chilly Chicken</a>
+				   <a class="price">Rs 190 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/8.jpg"></a>
+				   <a class="name">Chicken 65</a>
+				   <a class="price">Rs 190 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/9.jpg"></a>
+				   <a class="name">Chicken Drumsticks</a>
+				   <a class="price">Rs 200 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/11.jpg"></a>
+				   <a class="name">Paneer Sheek Kebab</a>
+				   <a class="price">Rs 180 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/12.jpg"></a>
+				   <a class="name">Tandoori Chicken</a>
+				   <a class="price">Rs 240 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/13.jpg"></a>
+				   <a class="name">Tangdi Kebab</a>
+				   <a class="price">Rs 210 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'"  class="product">
+				   <a class="image"><img src="../images/mobile/1.jpg"></a>
+				   <a class="name">Tomato Soup</a>
+				   <a class="price">Rs 100 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'" class="product">
+				  <a class="image"><img src="../images/mobile/2.jpg"></a>
+				   <a class="name">Hot N Sour Soup</a>
+				   <a class="price">Rs 100 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'" class="product">
+				  <a class="image"><img src="../images/mobile/3.jpg"></a>
+				   <a class="name">Chicken Corn Soup</a>
+				   <a class="price">Rs 140 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'" class="product">
+				  <a class="image"><img src="../images/mobile/4.jpg"></a>
+				   <a class="name">Veg Manchurian</a>
+				   <a class="price">Rs 160 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'" class="product">
+				  <a class="image"><img src="../images/mobile/5.jpg"></a>
+				   <a class="name">Paneer 65</a>
+				   <a class="price">Rs 160 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li onClick="location.href='singleItem.html'" class="product">
+				  <a class="image"><img src="../images/mobile/6.jpg"></a>
+				   <a class="name">Mushroom Baby Corn</a>
+				   <a class="price">Rs 160 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/7.jpg"></a>
+				   <a class="name">Chilly Chicken</a>
+				   <a class="price">Rs 190 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/8.jpg"></a>
+				   <a class="name">Chicken 65</a>
+				   <a class="price">Rs 190 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/9.jpg"></a>
+				   <a class="name">Chicken Drumsticks</a>
+				   <a class="price">Rs 200 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/11.jpg"></a>
+				   <a class="name">Paneer Sheek Kebab</a>
+				   <a class="price">Rs 180 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/12.jpg"></a>
+				   <a class="name">Tandoori Chicken</a>
+				   <a class="price">Rs 240 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+				<li class="product">
+				  <a class="image"><img src="../images/mobile/13.jpg"></a>
+				   <a class="name">Tangdi Kebab</a>
+				   <a class="price">Rs 210 /-</a>
+				   <button class="btn btn-primary greyBtn">Add to cart</button>
+				</li>
+
+			</ul>
+		</div>
+
+<script src="../js/modernizr.custom.js"></script>
+<script src="../js/masonry.pkgd.min.js"></script>
+<script src="../js/imagesloaded.js"></script>
+<script src="../js/classie.js"></script>
+<script src="../js/AnimOnScroll.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/configuration.js"></script>
+
+<script>
+	//Products Grid Scrolling functionality..
+	if(AnimOnScroll)
+	{
+	        new AnimOnScroll( document.getElementById( 'grid' ), {
+	            minDuration : 0.4,
+	            maxDuration : 0.7,
+	            viewportFactor : 0.2
+	        } );
+	}
+</script>
+
+</body>
+</html>
